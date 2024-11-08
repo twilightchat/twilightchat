@@ -15,13 +15,13 @@ jobs:
       - name: Clone the .github Repository
         run: |
           # Clone the .github repository
-          git clone https://github.com/twilightchat/.github.git
+          git clone https://github.com/twilightchat/.github.git profile
 
       - name: Copy README to Organization Profile
         run: |
           # Copy the README to the .github profile directory
-          mkdir -p .github/profile
-          cp README.md .github/profile/README.md
+          mkdir -p profile/profile
+          cp README.md profile/profile/README.md
 
       - name: Commit and Push Changes
         run: |
