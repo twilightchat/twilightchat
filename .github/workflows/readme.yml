@@ -14,7 +14,7 @@ jobs:
 
       - name: Clone the .github Repository
         env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Clone the .github repository
           git clone https://x-access-token:${GITHUB_TOKEN}@github.com/twilightchat/.github.git profile
@@ -27,7 +27,7 @@ jobs:
 
       - name: Commit and Push Changes
         env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd profile
           git config user.name "github-actions[bot]"
