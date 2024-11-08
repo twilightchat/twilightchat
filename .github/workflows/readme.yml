@@ -24,10 +24,13 @@ jobs:
           cp README.md profile/profile/README.md
 
       - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd profile
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add profile/README.md
+          # Commit only if there are changes
           git commit -m "Update organization profile README from repo README"
-          git push
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/twilightchat/.github.git
