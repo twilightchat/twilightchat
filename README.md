@@ -1,5 +1,5 @@
 <p>
-  <img width="100" src="https://raw.githubusercontent.com/twilightchat/twilightchat/refs/heads/main/logo.png" />
+  <img width="192" src="https://raw.githubusercontent.com/twilightchat/twilightchat/refs/heads/main/logo.png" />
 </p>
 
 # TwilightChat
