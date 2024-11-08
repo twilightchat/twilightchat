@@ -2,9 +2,8 @@ name: Update Organization Profile README
 
 on:
   push:
-    paths:
-      - 'README.md'  # Trigger only when README.md is updated in the repo
-
+    branches: [ 'main' ]
+    
 jobs:
   update-org-profile:
     runs-on: macos-11
