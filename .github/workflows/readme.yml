@@ -41,4 +41,4 @@ jobs:
           git add profile/README.md
           # Commit only if there are changes
           git commit -m "Update organization profile README from repo README"
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/twilightchat/.github.git
+          git push -u origin master
