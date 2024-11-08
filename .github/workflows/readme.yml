@@ -3,6 +3,9 @@ name: Update Organization Profile README
 on:
   push:
     branches: [ 'main' ]
+
+permissions:
+  attestations: write
     
 jobs:
   update-org-profile:
