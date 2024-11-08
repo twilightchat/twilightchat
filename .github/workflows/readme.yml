@@ -9,6 +9,9 @@ permissions:
     
 jobs:
   update-org-profile:
+    permissions:
+      contents: write
+
     runs-on: macos-latest
 
     steps:
